@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <link rel="stylesheet" href="style.css">
+<div class="app">
+
+<!-- PANEL LATERAL -->
+
+<div class="sidebar">
+
+<h3>RIGHT HAND</h3>
+
+<button onclick="newChat()">＋ Nuevo chat</button>
+
+<button onclick="toggleDark()">🌙 Modo oscuro</button>
+
+<h4>Historial</h4>
+
+<div id="history"></div>
+
+</div>
+
+
+<!-- CHAT -->
+
+<div class="chat-app">
+
+<div class="header">
+<img src="https://i.imgur.com/yeL38W8.jpeg" class="logo">
+<h2>RIGHT HAND</h2>
+</div>
+
+<div id="chat"></div>
+
+<div class="input-area">
+<input id="userInput" placeholder="Escribe un comando o pregunta...">
+<button onclick="sendMessage()">Enviar ✈️</button>
+</div>
+
+<div class="quick-buttons">
+<button onclick="quickCommand('dir')">DIR</button>
+<button onclick="quickCommand('cd')">CD</button>
+<button onclick="quickCommand('cls')">CLS</button>
+<button onclick="quickCommand('mkdir')">MKDIR</button>
+<button onclick="quickCommand('del')">DEL</button>
+<button onclick="quickCommand('copy')">COPY</button>
+<button onclick="quickCommand('ping')">PING</button>
+</div>
+
+</div>
+
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
